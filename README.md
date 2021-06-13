@@ -14,9 +14,31 @@ Build a simple website with 3 pages:
 - Portrait of your favorite dish
 
 Add a header and footer to your website by using the php function "include". This means you don't have to write the footer and the navigation three times, but can *include* it in your pages.
-Don't add any styling yet.
 
 ### Exercise 3
 Last week we learnt SASS. Therefore we will build this website using SASS.
 
+This is the corresponding folder structure:
+
+```
+php-docker-intro   
+├── docker  
+│     └── nginx  
+│     │      └── nginx.conf  
+│     └── docker-compose.yml   
+│     └── Dockerfile  
+└── www  
+│     └── public  
+│            └── build  
+│            │    └── css  
+│            │         └── (the CSS file will be compiled and created here - never write in this file!)  
+│            └── src  
+│            │    └── scss  
+│            │         └── style.scss (write your scss styles here!)  
+│            └── index.php  
+│  
+├── package.json  
+├── README.md  
+└── .gitignore  
+```
 
