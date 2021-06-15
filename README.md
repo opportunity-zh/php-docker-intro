@@ -50,6 +50,10 @@ php-docker-intro
 └── .gitignore  
 ```
 
+## How to run sass
+Run the command `npm install` in the terminal in the root folder
+`npm run sass:watch`
+
 
 ---------
 
@@ -104,5 +108,10 @@ php-docker-intro
 ├── README.md  
 └── .gitignore  
 ```
+
+
+## Sass starten
+Den Befehl `npm install` im Terminal im Root Ordner laufen lassen.
+Danach `npm run sass:watch`
 
 
