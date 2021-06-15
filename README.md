@@ -1,3 +1,7 @@
+
+## How to run this project
+Run the command `docker-compose up` inside the docker folder.
+
 ## What is this repo for?
 This is a simple php docker-compose setup with nginx.
 With this setup we will build a small website.
@@ -11,9 +15,12 @@ Clone this git repository and write your first php code.
 Build a simple website with 3 pages:
 - Home
 - About me
-- Portrait of your favorite dish
+- My favourite dish
 
-Add a header and footer to your website by using the php function "include". This means you don't have to write the footer and the navigation three times, but can *include* it in your pages.
+Add a header and footer to your website by using the php function "include".  
+This means you don't have to write the footer and the navigation three times, but can *include* it in your pages.  
+Google the PHP Include functions for further help.  
+
 
 ### Exercise 3
 Last week we learnt SASS. Therefore we will build this website using SASS.
@@ -41,4 +48,59 @@ php-docker-intro
 ├── README.md  
 └── .gitignore  
 ```
+
+
+---------
+
+
+## Das Projekt starten
+Im Terminal in den Ordner docker wechseln und folgenden Befehl ausführen `docker-compose up`.
+
+## Für was ist dieses Repository?
+Dies ist ein simples php docker-compose setup mit nginx.
+Mit diesem Setup werden wir eine kleine Website erstellen.
+Das Ziel dieser Übung ist nicht eine fancy Website zu bauen, sondern unsere neu erlertnen Themen PHP und SASS zu kombinieren. 
+
+### Übung 1
+Dieses Repo klonen und erste eigene Zeile PHP schreiben.
+(Tipp: `echo`-Funktion benutzen)
+
+### Übung 2
+Simple Webseite mit 3 Seiten bauen:
+- Home
+- Über mich
+- Mein Lieblingsessen
+
+Füge einen Header und einen Footer zu deiner Webseite mit der PHP-Funktion "inlcude".
+Das bedeutet, der Header und Footer müssen nicht drei mal geschrieben werden, sondern können einmal erstellt werden und inkludiert (hinzugefügt) werden in deine Seiten.
+Für weitere Info google PHP-Funktion "include".
+
+
+### Übung 3
+Letzte Woche haben wir SASS gelernt. Darum werden wir diese Seite mit SASS stylen.
+
+Dies ist die folgende Ordner-Struktur:
+
+```
+php-docker-intro   
+├── docker  
+│     └── nginx  
+│     │      └── nginx.conf  
+│     └── docker-compose.yml   
+│     └── Dockerfile  
+└── www  
+│     └── public  
+│            └── build  
+│            │    └── css  
+│            │         └── (CSS wird in dieses File kompiliert - nie in diese Datei schreiben!)  
+│            └── src  
+│            │    └── scss  
+│            │         └── style.scss (Hier schreiben wir unser SCSS rein)  
+│            └── index.php  
+│  
+├── package.json  
+├── README.md  
+└── .gitignore  
+```
+
 
