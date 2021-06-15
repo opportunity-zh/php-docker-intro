@@ -1,6 +1,7 @@
 
 ## How to run this project
 Run the command `docker-compose up` inside the docker folder.
+View the project in the browser with `localhost:8000` 
 
 ## What is this repo for?
 This is a simple php docker-compose setup with nginx.
@@ -55,6 +56,7 @@ php-docker-intro
 
 ## Das Projekt starten
 Im Terminal in den Ordner docker wechseln und folgenden Befehl ausführen `docker-compose up`.
+Das Projekt ist im Browser unter `localhost:8000` zu finden.
 
 ## Für was ist dieses Repository?
 Dies ist ein simples php docker-compose setup mit nginx.
