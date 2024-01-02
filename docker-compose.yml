@@ -1,15 +1,15 @@
-version: '3.8'
+version: "3.8"
 
 services:
   app:
     build:
-      context: ./
+      context: ./docker
       dockerfile: Dockerfile
     container_name: php-intro-opportunity
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
-      - ../www:/var/www
+      - ./www:/var/www
   nginx:
     image: nginx:1.19-alpine
     container_name: php-intro-nginx
@@ -17,5 +17,5 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - ../www:/var/www
-      - ./nginx:/etc/nginx/conf.d
+      - ./www:/var/www
+      - ./docker/nginx:/etc/nginx/conf.d
