@@ -6,4 +6,6 @@ RUN apt-get update && apt-get install -y \
     zip \
     unzip
 
+RUN cp /usr/local/etc/php/php.ini-development /usr/local/etc/php/php.ini
+
 WORKDIR /var/www
